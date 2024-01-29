@@ -1,0 +1,34 @@
+class Solution {
+
+    void cyclicSort(vector<int>&nums){
+
+        int i = 0;
+
+        while(i<nums.size()){
+
+            int index = nums[i];
+
+            if(nums[i] < nums.size() &&nums[i] != nums[index]){
+
+                swap(nums[i] , nums[index]);
+            }
+            else{
+                i++;
+            }
+        }
+    }
+public:
+    int missingNumber(vector<int>& nums) {
+
+        cyclicSort(nums);
+
+        int i = 0;
+
+       for(;i<nums.size() ; i++){
+            if (i != nums[i])
+                return i;
+            
+        }
+        return nums.size();
+    }
+};
