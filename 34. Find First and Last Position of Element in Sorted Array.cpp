@@ -14,7 +14,7 @@ public:
                 }
                 else{
                     s = mid+1;
-                }
+                } 
             }
 
             else if(nums[mid] <=target){
@@ -29,7 +29,7 @@ public:
         return ans;
     }
   
-    vector<int> searchRange(vector<int>& nums, int target) {
+    vector<int> searchRange(vector<int>& nums, int target) 
         
 
          return {solve(nums,target,0),solve(nums , target,1)};
