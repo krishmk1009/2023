@@ -6,7 +6,7 @@ let target = 9;
 console.log(search(arr, 0 , n,target))
 function search(arr, i , n,target){
     
-    if(i === n-1){
+    if(i === n){
         return -1;
     }
     if(arr[i] == target) return i;
