@@ -37,3 +37,32 @@ int main() {
 
     return 0;
 }
+
+
+// js code
+
+/*
+let arr = [1, 2, 3, 4, 2, 6, 2];
+    let target = 2;
+ 
+    const result = linear_search_recursive(arr, target,  0);
+    
+    console.log(result);
+    
+    
+function linear_search_recursive(arr, target, index){
+    
+    let ans = [];
+    
+    if(index === arr.length) return ans;
+    
+    if(arr[index] === target) ans.push(index);
+    
+    let fromBelowCalls = linear_search_recursive(arr, target, index+1);
+    
+    ans = ans.concat(fromBelowCalls);
+    return ans;
+    
+}
+
+*/
