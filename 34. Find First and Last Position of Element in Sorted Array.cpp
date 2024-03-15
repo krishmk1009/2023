@@ -1,5 +1,5 @@
 class Solution {
-public:
+public
 
     int solve(vector<int>&nums , int target , int occur){
         int s = 0 , e = nums.size()-1,mid;
