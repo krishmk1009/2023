@@ -19,4 +19,4 @@ function pri(a,b){
 
 const funPri = curry(pri);
 
-funPri(2,4)
+// funPri(2,4)
