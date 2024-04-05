@@ -15,7 +15,7 @@ type Admin = {
 const logginUser: User | Admin = { name: "name", id: "slj" };
 
 // const arr: Array< string | number> = [1, 2, "hello"];
-// or
+// or //
 const arr: ( string | number)[] = [1, 2, "hello"];
 
 export {};
